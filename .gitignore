@@ -1,0 +1,5 @@
+/lib/
+/tools/*.jar
+/build/
+/.local/
+*.log
