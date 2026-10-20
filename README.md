@@ -12,6 +12,12 @@ Requires **desktop Java 21+**, Bash, curl and sha256sum. A JDK is optional: the 
 ./run.sh
 ```
 
+On Windows, install Git for Windows and Java 21+, open **Git Bash** in this folder, and run the same command. The launch and test scripts select the Windows `;` classpath separator automatically. After compilation, you can also launch from Windows Command Prompt:
+
+```bat
+java -Dvoid.save=.local/save.properties -cp "build/classes;lib/core-4.3.1.jar" VoidProspector
+```
+
 The window is 1280 × 720. Rendering happens at 640 × 360 with `noSmooth()` on both Processing surfaces and exact integer scaling. Text uses a custom 3 × 5 bitmap font. There is no texture interpolation or font antialiasing.
 
 This is a Java-mode Processing application (`VoidProspector extends PApplet`) compiled directly against Processing Core, without requiring the Processing IDE. Source lives in `src/`.
