@@ -12,7 +12,7 @@ Requires **desktop Java 21+**, Bash, curl and sha256sum. A JDK is optional: the 
 ./run.sh
 ```
 
-On Windows, install Git for Windows and Java 21+, open **Git Bash** in this folder, and run the same command. The launch and test scripts select the Windows `;` classpath separator automatically. After compilation, you can also launch from Windows Command Prompt:
+On Windows, install Git for Windows and Java 21+, open **Git Bash** in this folder, and run the same command. The launcher uses `javaw` on Windows and `java` on Linux/macOS. The launch and test scripts select the Windows `;` classpath separator automatically. After compilation, you can also launch from Windows Command Prompt:
 
 ```bat
 java -Dvoid.save=.local/save.properties -cp "build/classes;lib/core-4.3.1.jar" VoidProspector
